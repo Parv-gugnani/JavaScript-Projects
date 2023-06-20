@@ -4,6 +4,9 @@ let songIndex = 0;
 let audioElements = new Audio("Joel.mp3");
 let masterPlay = document.getElementById("masterPlay");
 let myProgressbar = document.getElementById("myProgressbar");
+let gif = document.getElementById("gif");
+
+//
 let songs = [
   {
     songName: "Joel",
@@ -19,10 +22,12 @@ masterPlay.addEventListener("click", () => {
     audioElements.play();
     masterPlay.classList.remove("fa-solid fa-play");
     masterPlay.classList.add("fa-solid fa-pause");
+    gif.style.opacity = 1;
   } else {
     audioElements.pause();
     masterPlay.classList.remove("fa-solid fa-play");
     masterPlay.classList.add("fa-solid fa-pause");
+    gif.style.opacity = 0;
   }
 });
 
