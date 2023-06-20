@@ -13,6 +13,11 @@ let songs = [
     filePath: "MelodyVerse/Joel.mp3",
     coverPath: "MelodyVerse/cover.jpg",
   },
+  {
+    songName: "Familiar",
+    filePath: "MelodyVerse/Familiar.mp3",
+    coverPath: "MelodyVerse/img2.jpg",
+  },
 ];
 // audioElements.play();
 

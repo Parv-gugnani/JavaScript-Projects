@@ -1,0 +1,27 @@
+/* Add your styles here */
+
+/* Example styles for the player section */
+#player {
+  text-align: center;
+}
+
+#song-info {
+  margin-bottom: 20px;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+#progress-bar {
+  height: 10px;
+  background-color: #ccc;
+}
+
+#progress {
+  height: 100%;
+  width: 0;
+  background-color: #0000ff;
+}
+
+/* Add more styles for different sections and elements */
