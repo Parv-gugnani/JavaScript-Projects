@@ -111,3 +111,19 @@ h1 {
 .timestamp i {
   cursor: pointer;
 }
+
+.songinfo {
+  position: absolute;
+  left: 12vw;
+  color: azure;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.songinfo img {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.rotate-img {
+  transform: rotate(-90deg);
+}
