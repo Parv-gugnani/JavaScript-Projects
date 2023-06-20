@@ -67,6 +67,10 @@ nav ul li {
   cursor: pointer;
 }
 
+.SongItemContainer {
+  margin-top: 74px;
+}
+
 h1 {
   color: aliceblue;
 }
@@ -86,7 +90,7 @@ h1 {
   height: 50px;
   display: flex;
   background-color: rgb(147, 76, 205);
-  width: 200%;
+  width: 250%;
   color: white;
   border-radius: 15px;
   margin: 12px 0;
@@ -102,4 +106,8 @@ h1 {
 
 .timestamp {
   margin: 0 23px;
+}
+
+.timestamp i {
+  cursor: pointer;
 }
