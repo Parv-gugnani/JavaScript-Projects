@@ -15,7 +15,7 @@ let songs = [
   },
   {
     songName: "Familiar",
-    filePath: "MelodyVerse/Familiar.mp3",
+    filePath: "MelodyVerse/Joel.mp3",
     coverPath: "MelodyVerse/img2.jpg",
   },
 ];
@@ -25,19 +25,26 @@ let songs = [
 masterPlay.addEventListener("click", () => {
   if (audioElements.paused || audioElements.currentTime <= 0) {
     audioElements.play();
-    masterPlay.classList.remove("fa-solid fa-play");
-    masterPlay.classList.add("fa-solid fa-pause");
+    masterPlay.classList.remove("fa-play");
+    masterPlay.classList.add("fa-pause");
     gif.style.opacity = 1;
   } else {
     audioElements.pause();
-    masterPlay.classList.remove("fa-solid fa-play");
-    masterPlay.classList.add("fa-solid fa-pause");
+    masterPlay.classList.remove("fa-play");
+    masterPlay.classList.add("fa-pause");
     gif.style.opacity = 0;
   }
 });
 
 //Listen to  Events
-myProgressbar.addEventListener("timeupdate", () => {
-  console.log("timeupdate");
-  //update
+audioElements.addEventListener("timeupdate", () => {
+  progress = parseInt(
+    (audioElements.currentTime / audioElements.duration) * 100
+  );
+  myProgressbar.value = progress;
+});
+
+myProgressbar.addEventListener("change", () => {
+  audioElements.currentTime =
+    (myProgressbar.value * audioElements.duration) / 100;
 });

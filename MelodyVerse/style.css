@@ -19,7 +19,7 @@ nav ul {
   align-items: center;
   list-style: none;
   height: 90px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 nav ul li {
@@ -63,7 +63,7 @@ nav ul li {
 }
 
 #myProgressbar {
-  width: 75vw;
+  width: 60vw;
   cursor: pointer;
 }
 
@@ -114,7 +114,7 @@ h1 {
 
 .songinfo {
   position: absolute;
-  left: 12vw;
+  left: 19.5vw;
   color: azure;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
