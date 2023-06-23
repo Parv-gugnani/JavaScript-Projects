@@ -43,7 +43,7 @@ let songs = [
 ];
 
 songItems.forEach((element, i) => {
-  console.log(element, i);
+  // console.log(element, i);
   element.getElementsByTagName("img")[0].src = songs[i].coverPath;
   element.getElementsByClassName("SongName")[0].innerText = songs[i].songName;
 });
@@ -59,8 +59,8 @@ masterPlay.addEventListener("click", () => {
     gif.style.opacity = 1;
   } else {
     audioElements.pause();
-    masterPlay.classList.remove("fa-play");
-    masterPlay.classList.add("fa-pause");
+    masterPlay.classList.remove("fa-pause");
+    masterPlay.classList.add("fa-play"); //my mistake here Lol i misplaced them
     gif.style.opacity = 0;
   }
 });
@@ -73,7 +73,31 @@ audioElements.addEventListener("timeupdate", () => {
   myProgressbar.value = progress;
 });
 
+//
 myProgressbar.addEventListener("change", () => {
   audioElements.currentTime =
     (myProgressbar.value * audioElements.duration) / 100;
 });
+
+//
+const MakeAllPlays = () => {
+  Array.from(document.getElementsByClassName("songItemPlay")).forEach(
+    (element) => {
+      element.classList.remove("fa-pause");
+      element.classList.add("fa-play");
+    }
+  );
+};
+Array.from(document.getElementsByClassName("songItemPlay")).forEach(
+  (element) => {
+    element.addEventListener("click", (e) => {
+      console.log(e.target);
+      MakeAllPlays();
+      e.target.classList.remove("fa-play");
+      e.target.classList.add("fa-pause");
+      audioElements.src;
+      audioElements.currentTime = 0;
+      audioElements.play();
+    });
+  }
+);
