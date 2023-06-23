@@ -5,6 +5,7 @@ let audioElements = new Audio("Joel.mp3");
 let masterPlay = document.getElementById("masterPlay");
 let myProgressbar = document.getElementById("myProgressbar");
 let gif = document.getElementById("gif");
+let songItems = Array.from(document.getElementsByClassName("songItem"));
 
 //
 let songs = [
@@ -18,7 +19,33 @@ let songs = [
     filePath: "MelodyVerse/Joel.mp3",
     coverPath: "MelodyVerse/img2.jpg",
   },
+  {
+    songName: "Glimpse of Us",
+    filePath: "MelodyVerse/GlimpseUs.mp3",
+    coverPath: "MelodyVerse/glimpse.jpg",
+  },
+  {
+    songName: "Twisted olive branch",
+    filePath: "MelodyVerse/twistedolive.mp3",
+    coverPath: "MelodyVerse/twisted.jpg",
+  },
+  {
+    songName: "Take Care",
+    filePath: "MelodyVerse/TakeCare.mp3",
+    coverPath: "MelodyVerse/Takecare.jpg",
+  },
+  {
+    songName: "You are the Inspiration",
+    filePath: "MelodyVerse/yourtheinspiration.mp3",
+    coverPath: "MelodyVerse/insp.jpg",
+  },
 ];
+
+songs.forEach((element, i) => {
+  console.log(element, i);
+  element.getElementsByTagName("img")[0].src = songs[i].filePath;
+});
+
 // audioElements.play();
 
 //handle play pause click
