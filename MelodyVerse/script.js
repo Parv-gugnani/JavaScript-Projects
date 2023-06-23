@@ -1,7 +1,7 @@
 console.log("Welcome to MelodyVerse");
 //Intial
 let songIndex = 0;
-let audioElements = new Audio("songs/Joel.mp3");
+let audioElements = new Audio("1.mp3");
 let masterPlay = document.getElementById("masterPlay");
 let myProgressbar = document.getElementById("myProgressbar");
 let gif = document.getElementById("gif");
@@ -11,40 +11,41 @@ let songItems = Array.from(document.getElementsByClassName("songItem"));
 let songs = [
   {
     songName: "Joel",
-    filePath: "MelodyVerse/Joel.mp3",
-    coverPath: "MelodyVerse/img1.jpg",
-  },
-  {
-    songName: "Familiar",
-    filePath: "MelodyVerse/Joel.mp3",
-    coverPath: "MelodyVerse/img2.jpg",
-  },
-  {
-    songName: "Glimpse of Us",
-    filePath: "MelodyVerse/GlimpseUs.mp3",
-    coverPath: "MelodyVerse/img3.jpg",
-  },
-  {
-    songName: "Twisted olive branch",
-    filePath: "MelodyVerse/twistedolive.mp3",
-    coverPath: "MelodyVerse/img4.jpg",
+    filePath: "1.mp3",
+    coverPath: "img1.jpg",
   },
   {
     songName: "Take Care",
-    filePath: "MelodyVerse/TakeCare.mp3",
-    coverPath: "MelodyVerse/img5.jpg",
+    filePath: "2.mp3",
+    coverPath: "img2.jpg",
   },
   {
+    songName: "Familiar",
+    filePath: "3.mp3",
+    coverPath: "img3.jpg",
+  },
+  {
+    songName: "Glimpse of Us",
+    filePath: "4.mp3",
+    coverPath: "img4.jpg",
+  },
+  {
+    songName: "Twisted olive branch",
+    filePath: "5.mp3",
+    coverPath: "img5.jpg",
+  },
+
+  {
     songName: "You are the Inspiration",
-    filePath: "MelodyVerse/yourtheinspiration.mp3",
-    coverPath: "MelodyVerse/img6.jpg",
+    filePath: "6.mp3",
+    coverPath: "img6.jpg",
   },
 ];
 
 songItems.forEach((element, i) => {
   console.log(element, i);
   element.getElementsByTagName("img")[0].src = songs[i].coverPath;
-  element.getElementsByClassName("SongName")[0].innerText = songs[i].SongName;
+  element.getElementsByClassName("SongName")[0].innerText = songs[i].songName;
 });
 
 // audioElements.play();
