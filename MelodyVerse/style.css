@@ -80,10 +80,9 @@ h1 {
   margin: 5;
 }
 
-/* how to do pointer style cursor */
 .icons {
   cursor: pointer;
-  font-size: 39px; /* Increase or decrease the size as needed */
+  font-size: 39px;
 }
 
 .songItem {
