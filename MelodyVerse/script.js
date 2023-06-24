@@ -91,13 +91,17 @@ const MakeAllPlays = () => {
 Array.from(document.getElementsByClassName("songItemPlay")).forEach(
   (element) => {
     element.addEventListener("click", (e) => {
-      console.log(e.target);
       MakeAllPlays();
+      index = parseInt(e.target.id);
       e.target.classList.remove("fa-play");
       e.target.classList.add("fa-pause");
-      audioElements.src;
+      //
+      audioElements.src = `${index + 1}.mp3`;
       audioElements.currentTime = 0;
       audioElements.play();
+      //
+      masterPlay.classList.remove("fa-play");
+      masterPlay.classList.add("fa-pause");
     });
   }
 );
