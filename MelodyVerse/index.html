@@ -114,13 +114,22 @@
     <div class="bottom">
       <input type="range" id="myProgressbar" min="0" value="0" max="100" />
       <div class="icons">
-        <i class="fa-solid fa-backward-step" style="color: #ffffff"></i>
+        <i
+          class="fa-solid fa-backward-step"
+          id="previous"
+          style="color: #ffffff"
+        ></i>
         <i class="fa-solid fa-play" style="color: #ffffff" id="masterPlay"></i>
-        <i class="fa-solid fa-forward-step" style="color: #ffffff"></i>
+        <i
+          class="fa-solid fa-forward-step"
+          id="next"
+          style="color: #ffffff"
+        ></i>
       </div>
       <div class="songinfo">
-        <img src="play.gif" width="50px" class="rotate-img" id="gif" /> Joel -
-        Appart
+        <!-- song name changes -->
+        <img src="play.gif" width="50px" class="rotate-img" id="gif" />
+        <span id="MasterSongName">Joel</span>
       </div>
     </div>
     <!-- script -->
