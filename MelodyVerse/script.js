@@ -11,33 +11,33 @@ let songItems = Array.from(document.getElementsByClassName("songItem"));
 //
 let songs = [
   {
-    songName: "Joel",
+    songName: "Joel - Appart",
     filePath: "1.mp3",
     coverPath: "img1.jpg",
   },
   {
-    songName: "Take Care",
+    songName: "Take Care - Beach House",
     filePath: "2.mp3",
     coverPath: "img2.jpg",
   },
   {
-    songName: "Familiar",
+    songName: "Familiar - Agnes Obel",
     filePath: "3.mp3",
     coverPath: "img3.jpg",
   },
   {
-    songName: "Glimpse of Us",
+    songName: "Glimpse of Us - Joji",
     filePath: "4.mp3",
     coverPath: "img4.jpg",
   },
   {
-    songName: "Twisted olive branch",
+    songName: "Twisted olive branch - Asaf Addam",
     filePath: "5.mp3",
     coverPath: "img5.jpg",
   },
 
   {
-    songName: "You are the Inspiration",
+    songName: "You are the Inspiration -Chicago",
     filePath: "6.mp3",
     coverPath: "img6.jpg",
   },
@@ -99,8 +99,10 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach(
       e.target.classList.add("fa-pause");
       //
       audioElements.src = `${songIndex + 1}.mp3`;
+      MasterSongName.innerText = songs[songIndex].songName;
       audioElements.currentTime = 0;
       audioElements.play();
+      gif.style.opacity = 1;
       //
       masterPlay.classList.remove("fa-play");
       masterPlay.classList.add("fa-pause");
@@ -119,6 +121,7 @@ document.getElementById("next").addEventListener("click", () => {
   MasterSongName.innerText = songs[songIndex].songName;
   audioElements.currentTime = 0;
   audioElements.play();
+  gif.style.opacity = 1;
   masterPlay.classList.remove("fa-play");
   masterPlay.classList.add("fa-pause");
 });
@@ -134,6 +137,7 @@ document.getElementById("previous").addEventListener("click", () => {
   MasterSongName.innerText = songs[songIndex].songName;
   audioElements.currentTime = 0;
   audioElements.play();
+  gif.style.opacity = 1;
   masterPlay.classList.remove("fa-play");
   masterPlay.classList.add("fa-pause");
 });
