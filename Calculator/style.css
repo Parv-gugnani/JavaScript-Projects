@@ -41,9 +41,17 @@ form .display {
   margin: 20px 0;
 }
 
-form.display input {
+form .display input {
   text-align: right;
   flex: 1;
   font-size: 45px;
   box-shadow: none;
+}
+
+form input.equal {
+  width: 145px;
+}
+
+form input.operator {
+  color: #bcffd0;
 }
