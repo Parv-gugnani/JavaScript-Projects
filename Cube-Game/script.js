@@ -30,15 +30,12 @@ document.addEventListener("keydown", function (event) {
       positionY += 50;
       break;
     default:
-      return; // Exit the function if the key is not an arrow key
+      return; // Exit the function if the key is not an arrow keyf
   }
 
-  // Prevent scrolling of the page
   event.preventDefault();
 
-  // Update the cube position
   updateCubePosition();
 });
 
-// Initialize the cube position
 updateCubePosition();
