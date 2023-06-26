@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 18px;
+}
+
+input {
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
