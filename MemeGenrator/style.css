@@ -18,7 +18,7 @@
   color: #f64d4d;
   background: #fff;
   cursor: pointer;
-  transition: all 400ms ease;
+  transition: all 700ms ease;
 }
 
 .meme-generator .generate-meme-btn:hover {
