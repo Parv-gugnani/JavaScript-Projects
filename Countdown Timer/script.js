@@ -1,11 +1,12 @@
-const targetDate = new Date("July 10, 2023 15:00:00").getTime();
+// Set the target date and time for the countdown
+const targetDate = new Date("July 3, 2023 15:00:00").getTime();
 
+// Update the countdown every second
 const countdownInterval = setInterval(() => {
   const now = new Date().getTime();
 
   const timeDifference = targetDate - now;
-
-  const days = Maths.floor(timeDifference / (1000 * 60 * 60 * 24));
+  const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
   const hours = Math.floor(
     (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
   );
