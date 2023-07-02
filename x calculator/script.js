@@ -1,5 +1,6 @@
 "use strict";
 
+//error solved with the help of the chat gpt
 const input = document.querySelector(".input");
 const result = document.querySelector(".result");
 const deleteBtn = document.querySelector(".delete");
