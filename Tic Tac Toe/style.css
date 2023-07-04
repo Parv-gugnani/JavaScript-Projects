@@ -1,18 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
 #board {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   width: 300px;
   height: 300px;
+  margin: 20px auto;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-/* # is used for id */
 
-/* " . " is used for class */
 .cell {
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 48px;
+  font-size: 72px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cell.X {
+  color: #1abc9c;
+}
+
+.cell.O {
+  color: #3498db;
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#score span {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+#reset {
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reset:hover {
+  background-color: #1c6397;
 }
