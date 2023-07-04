@@ -62,9 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //reset buttons
 const resetButton = document.getElementById("reset");
-resetButton.addEventListener("click", resetButton);
+resetButton.addEventListener("click", resetGame);
 
-function resetButton() {
+function resetGame() {
   currentPlayer = "X";
   gameOver = false;
 
@@ -93,8 +93,6 @@ function endGame(message) {
 }
 
 function resetGame() {
-  // ...existing code...
-
   playerXScore = 0;
   playerOScore = 0;
   playerXScoreElement.textContent = `Player X: ${playerXScore}`;
