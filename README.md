@@ -4,7 +4,7 @@ This repository contains a collection of JavaScript projects. Each project is a 
 
 Feel free to explore the projects and learn from the code. Contributions, issues, and feedback are welcome!
 
-## Projects
+## Projects - >>>>>>
 
 ### Project 1: Name of Project
 
@@ -21,8 +21,6 @@ Feel free to explore the projects and learn from the code. Contributions, issues
 - Technologies: List of technologies or libraries used in the project.
 - Demo: Provide a link or instructions on how to access a live demo or view the project in action.
 - Installation: Instructions on how to set up and run the project locally.
-
-<!-- Repeat the structure for each project -->
 
 ## Contributing
 
