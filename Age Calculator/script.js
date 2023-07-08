@@ -1,3 +1,4 @@
+/*
 let userInput = document.getElementById("date");
 userInput.max = new Date().toISOString.split("T")[0];
 
@@ -39,4 +40,28 @@ function calculateAge() {
 
 function getDaysInMonth(year, month) {
   return new Date(year, month, 0).getDate();
+}
+
+*/
+
+let results = document.getElementById("results");
+
+function calculateAge() {
+  var inputDate = document.getElementById("date").value;
+  var today = new Date();
+  var birthDate = new Date(inputDate);
+
+  // Calculate the age
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var monthDifference = today.getMonth() - birthDate.getMonth();
+
+  // If the current month is less than the birth month or if they are in the same month but the current day is less than the birth day, subtract 1 from the age
+  if (
+    monthDifference < 0 ||
+    (monthDifference === 0 && today.getDate() < birthDate.getDate())
+  ) {
+    age--;
+  }
+
+  results.innerHTML = `Your Age is : ${age}`;
 }
