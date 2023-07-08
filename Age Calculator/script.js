@@ -40,7 +40,7 @@ function calculateAge() {
 
 function getDaysInMonth(year, month) {
   return new Date(year, month, 0).getDate();
-}
+} 
 
 */
 
@@ -55,7 +55,6 @@ function calculateAge() {
   var age = today.getFullYear() - birthDate.getFullYear();
   var monthDifference = today.getMonth() - birthDate.getMonth();
 
-  // If the current month is less than the birth month or if they are in the same month but the current day is less than the birth day, subtract 1 from the age
   if (
     monthDifference < 0 ||
     (monthDifference === 0 && today.getDate() < birthDate.getDate())
