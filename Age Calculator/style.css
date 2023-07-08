@@ -13,13 +13,14 @@
     #c850c0 48%,
     #ffcc70 100%
   ); */
+  animation: fade-in 0.9s ease-in-out;
 
   background-color: #0093e9;
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 
   width: 100%;
   min-height: 100vh;
-  color: #fec863;
+  color: #fbcb73;
   padding: 25px;
 }
 
@@ -38,22 +39,96 @@
   font-size: 60px;
 }
 
-input-box {
+.input-box {
   margin: 40px 0;
   padding: 35px;
-  border-radius: 10px;
+  border-radius: 15px;
   background: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
 }
 
-input-box input {
+.input-box input {
   flex: 1;
   margin-right: 20px;
   padding: 14px 20px;
   border: 0;
   outline: 0;
   font-size: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   position: relative;
+}
+
+.input-box button {
+  background: #fbcb73;
+  border: 0;
+  outline: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: 500;
+  color: #333;
+  cursor: pointer;
+}
+
+.input-box input::-webkit-calendar-picker-indicator {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-position: calc(100% - 10px);
+  background-size: 30px;
+  cursor: pointer;
+}
+
+/* animation for the calculate button */
+.animated-button {
+  transition: all 0.3s ease;
+}
+
+.animated-button:hover {
+  transform: scale(1.1);
+}
+
+.animated-button:active {
+  transform: scale(0.9);
+}
+
+/* Animation for the age title when the pages loads */
+.age {
+  animation: click-animation 0.5s;
+}
+
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* whole page */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+.inputa {
+  animation: click-animation 0.5s;
 }
