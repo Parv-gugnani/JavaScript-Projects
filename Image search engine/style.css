@@ -69,3 +69,53 @@ form button {
   cursor: pointer;
   display: none;
 }
+
+#search-result {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+#search-result img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* / */
+
+/* Define the initial state of the page */
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Define the animation when the page is visible */
+body.fade-in {
+  opacity: 1;
+}
+
+/*  */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  align-items: center;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
