@@ -2,7 +2,7 @@ const searchForm = document.getElementById("search-form");
 const searchBox = document.getElementById("search-box");
 const searchResult = document.getElementById("search-result");
 const showMoreBtn = document.getElementById("show-more-btn");
-const accessKey = ""; //"Add you own access key given by unspalsh or any website you use"
+const accessKey = "bBpf_oygynpa0Hf-8X0hzGU8DgV_u0Q6sid_7XLb_ZA"; //"Add you own access key given by unspalsh or any website you use"
 
 let keyboard = "";
 let page = 1;
