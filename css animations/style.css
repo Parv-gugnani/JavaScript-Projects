@@ -1,0 +1,40 @@
+.parent {
+  background-color: burlywood;
+  height: 400px;
+  width: 400px;
+}
+
+.child {
+  background-color: blueviolet;
+  height: 50%;
+  width: 50%;
+  animation: left-to-right 0.8s ease-in-out forwards infinite alternate;
+
+  /* transition: transform 0.8s ease-in-out; */
+  /* always should on child class    //            1s is delay*/
+}
+
+.parent:hover .child {
+  transform: translateX(100%);
+}
+
+@keyframes left-to-right {
+  0% {
+    background-color: burlywood;
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateY(100%);
+  }
+  50% {
+    background-color: chartreuse;
+  }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+  100% {
+    background-color: cadetblue;
+    transform: translateX(100%);
+  }
+}
