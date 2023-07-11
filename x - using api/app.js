@@ -1,7 +1,7 @@
 const submitBtn = document.getElementById("submitBtn");
 const promptInput = document.getElementById("promptInput");
 const imagesSection = document.querySelector(".images-section");
-const API_KEY = "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";
+const API_KEY = "your own";
 
 //
 submitBtn.addEventListener("click", async () => {
