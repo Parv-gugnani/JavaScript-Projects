@@ -1,5 +1,5 @@
 /*
-const API_KEY = "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";
+const API_KEY = "your own key";
 const submitIcon = document.querySelector("#submit-icon");
 const inputElement = document.querySelector("input");
 const imagesSection = document.querySelector(".images-section");
@@ -52,7 +52,7 @@ const imagesSection = document.querySelector(".images-section");
 
 // Function to handle image generation
 const getImages = async () => {
-  const API_KEY = "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";
+  const API_KEY = "your own key";
 
   // Prepare the API request options
   const options = {
