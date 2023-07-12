@@ -10,6 +10,7 @@ function updateCubePosition() {
   cube.style.top = positionY + "px";
   cube.style.left = positionX + "px";
 }
+// heleleo
 
 // Event listener for keyboard input
 document.addEventListener("keydown", function (event) {

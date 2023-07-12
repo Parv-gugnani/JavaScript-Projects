@@ -22,6 +22,7 @@ function createPassword() {
   }
   passwordBox.value = password;
 }
+// jajfjosjg
 
 function copyPassword() {
   passwordBox.select();
