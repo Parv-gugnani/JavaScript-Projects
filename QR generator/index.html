@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" type="image" href="qr.png" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Qr Generator</title>
   </head>
   <body>
-    <h1>Qr Code Generator</h1>
+    <h1>QR Code Generator</h1>
     <div id="qrcode"></div>
-    <input type="text" id="text-input" placeholder="Enter text or url" />
-    <button onclick="generateQRCode()">Generator QR Code</button>
+    <input type="text" id="text-input" placeholder="Enter text or URL" />
+    <button onclick="generateQRCode()">Generate QR Code</button>
+
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
