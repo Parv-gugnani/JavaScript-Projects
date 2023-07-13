@@ -27,5 +27,5 @@ function createPassword() {
 function copyPassword() {
   passwordBox.select();
   document.execCommand("copy");
-  //   alert("Password copied to clipboard");
+  // alert("Password copied to clipboard");
 }
