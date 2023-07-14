@@ -1,0 +1,56 @@
+/* typing */
+
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: blanchedalmond;
+}
+
+.typewriter {
+  overflow: hidden; /* Ensure text doesn't overflow container */
+  animation: typewriterAnimation 4s steps(1000) 1s 1 normal;
+  white-space: nowrap; /* Prevent line breaks */
+  border-right: 0.15em solid black; /* Create blinking cursor */
+}
+
+@keyframes typewriterAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* color */
+
+.color-change {
+  animation: colorAnimation 2s infinite;
+}
+
+@keyframes colorAnimation {
+  0% {
+    color: red;
+  }
+  10% {
+    color: aqua;
+  }
+  20% {
+    color: brown;
+  }
+  30% {
+    color: blueviolet;
+  }
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: aquamarine;
+  }
+  100% {
+    color: green;
+  }
+}
+
+/*  */
