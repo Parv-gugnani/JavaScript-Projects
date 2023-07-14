@@ -1,27 +1,55 @@
-/* typing */
-
 * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: blanchedalmond;
 }
 
-.typewriter {
-  overflow: hidden; /* Ensure text doesn't overflow container */
-  animation: typewriterAnimation 4s steps(1000) 1s 1 normal;
-  white-space: nowrap; /* Prevent line breaks */
-  border-right: 0.15em solid black; /* Create blinking cursor */
+/* typing */
+html {
+  min-height: 100%;
+  overflow: hidden;
+}
+body {
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Anonymous Pro", monospace;
+  background-color: blanchedalmond;
+}
+.line-1 {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  font-size: 180%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
 }
 
-@keyframes typewriterAnimation {
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
   from {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 24em;
   }
 }
-
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 /* color */
 
 .color-change {
@@ -53,4 +81,18 @@
   }
 }
 
-/*  */
+/*  scale animaitons*/
+
+.scale {
+  animation: scaleAnimation 2s infinite;
+  transform-origin: left top;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
