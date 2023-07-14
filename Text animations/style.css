@@ -96,3 +96,38 @@ body {
     transform: scale(1);
   }
 }
+
+/* Rotating  */
+
+.rotate {
+  animation: rotateAnimation 2s infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Glow */
+
+.glow {
+  animation: glowAnimation 2s infinite;
+}
+
+@keyframes glowAnimation {
+  0% {
+    text-shadow: 0 0 5px rgba(0, 89, 255, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 25, 25, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(0, 255, 94, 0.5);
+  }
+}
+
+/* shake */
