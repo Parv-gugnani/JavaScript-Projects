@@ -23,7 +23,7 @@ body {
   margin: 0 auto;
   border-right: 2px solid rgba(0, 0, 0, 0.75);
   font-size: 180%;
-  text-align: left;
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
@@ -131,3 +131,117 @@ body {
 }
 
 /* shake */
+.shake {
+  animation: shakeAnimation 0.1s infinite;
+}
+
+@keyframes shakeAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*  Bouncy*/
+
+.bounce {
+  animation: bounceAnimation 0.5s infinite;
+}
+
+@keyframes bounceAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* wobble */
+.wobble {
+  animation: wobbleAnimation 1s infinite;
+}
+
+@keyframes wobbleAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  15% {
+    transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* rainbow */
+
+.rainbow {
+  animation: rainbowAnimation 3s infinite;
+}
+
+@keyframes rainbowAnimation {
+  0% {
+    color: red;
+  }
+  14% {
+    color: orange;
+  }
+  28% {
+    color: yellow;
+  }
+  42% {
+    color: green;
+  }
+  57% {
+    color: blue;
+  }
+  71% {
+    color: indigo;
+  }
+  85% {
+    color: violet;
+  }
+  100% {
+    color: red;
+  }
+}
+
+/* floating */
+
+.float {
+  animation: floatAnimation 4s infinite;
+}
+
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(100);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+}
