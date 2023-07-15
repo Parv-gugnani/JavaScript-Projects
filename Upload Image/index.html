@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Your Image</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="card">
+        <h1>Parv</h1>
+        <p>@parvgugnani</p>
+        <img src="images.jpeg" id="profile-Pic" />
+        <label for="input-file">Update Image</label>
+
+        <input
+          type="file"
+          accept="Image/jpeg, Image/png, Image/jpg"
+          id="input-file"
+        />
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
