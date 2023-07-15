@@ -1,22 +1,34 @@
-This repository contains a collection of JavaScript HTML CSS projects. Each project is a separate directory within the repository, showcasing different concepts and applications of JavaScript , HTML , CSS.
+This repository contains a collection of JavaScript HTML CSS projects.
+I making project of everything that i am learning about html css js.
+It may help the begginer to make projects.
 
 Feel free to explore the projects and learn from the code. Contributions, issues, and feedback are welcome!
 
 Projects - >>>>>>
 
-Project 1: Age Calculator
-Description: Brief description of the project and its purpose.
-
-Demo: will add link soon !!
-
-Project 2: Name of Project
-Description: Brief description of the project and its purpose.
-Features: List of key features or functionalities of the project.
-Technologies: List of technologies or libraries used in the project.
-Demo: Provide a link or instructions on how to access a live demo or view the project in action.
-Installation: Instructions on how to set up and run the project locally.
-Contributing
-If you would like to contribute to this repository, follow these steps:
+Project 1 : AI Image generator
+Project 2 :Age Calculator
+Project 3 :Calculator
+Project 4 :Countdown Timer
+Project 5 :Cube-Game
+Project 6 :Drag and Drop
+Project 7 :Guessmynumber
+Project 8 :Image search engine
+Project 9 :MelodyVerse
+Project 10 :MemeGenrator
+Project 11 :Password generator
+Project 12 :QR generator
+Project 13 :Quiz App
+Project 14 :Text animations
+Project 15 :To Do List
+Project 16 :Upload Image
+Project 17 :Weather App
+Project 18 :WhiteBoard
+Project 19 :brainjs
+Project 20 :css animations
+Project 21 :pacman
+Project 22 :testing
+Project 23 :xx-trash
 
 Fork the repository.
 Create a new branch for your feature or bug fix.
