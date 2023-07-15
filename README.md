@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 This repository contains a collection of JavaScript HTML CSS projects. I have made making project of each and everything that i am learning about html css js. It may help the beginner to make projects.
+=======
+This repository contains a collection of JavaScript HTML CSS projects.
+I have made making project of each and everything that i am learning about html css js.
+It may help the beginner to make projects.
+
+> > > > > > > ea79c1332ac98eff02bf80e1b7ee7dd458d71e1e
 
 Feel free to explore the projects and learn from the code. Contributions, issues, and feedback are welcome!
 
@@ -50,7 +57,7 @@ Project 22 :testing
 
 Project 23 :xx-trash
 
-xx-trash: this project contain all the trah projects that did't worked or not good!
+xx-trash: This project contain all the trah projects that did't worked or not good , trash bin!
 
 Fork the repository. Create a new branch for your feature or bug fix. Make your changes and commit them. Push your changes to your forked repository. Submit a pull request to this repository's main branch. Please ensure that your code follows the project's coding standards and includes appropriate documentation where necessary.
 
