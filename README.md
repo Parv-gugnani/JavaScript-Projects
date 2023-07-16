@@ -1,7 +1,5 @@
-This repository contains a collection of JavaScript HTML CSS projects. I have made making project of each and everything that i am learning about html css js. It may help the beginner to make projects.
+This repository contains a collection of JavaScript HTML CSS projects. I have made project of each and everything that i am learning about html css js. It may help the beginner to make projects.
 
-This repository contains a collection of JavaScript HTML CSS projects.
-I have made making project of each and everything that i am learning about html css js.
 It may help the beginner to make projects.
 
 Feel free to explore the projects and learn from the code. Contributions, issues, and feedback are welcome!
