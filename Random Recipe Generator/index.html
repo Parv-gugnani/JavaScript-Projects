@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Recipe Generator</title>
     <link rel="icon" type="image" href="recipe.png" />
     <link rel="stylesheet" href="style.css" />
-    <title>Random Recipe Generator</title>
   </head>
   <body>
     <div class="container">
       <h1>Random Recipe Generator</h1>
-      <form class="recipeForm">
-        <label for="cusineType">Cusine Type:</label>
-        <select name="cusineType" id="cuisineTyoe">
-          <option value="italian"></option>
-          <option value="Mexican"></option>
+      <form id="recipeForm">
+        <!-- Add form elements for cuisine type, dietary restrictions, and number of servings -->
+        <!-- Example: -->
+        <label for="cuisineType">Cuisine Type:</label>
+        <select name="cuisineType" id="cuisineType">
+          <option value="Italian">Italian</option>
+          <option value="Mexican">Mexican</option>
         </select>
 
         <label for="dietaryRestrictions">Dietary Restrictions:</label>
@@ -22,15 +24,15 @@
         Vegetarian
         <input type="checkbox" name="dietaryRestrictions" value="Vegan" /> Vegan
 
-        <label for="servings">Number of Servings</label>
+        <label for="servings">Number of Servings:</label>
         <input type="number" name="servings" id="servings" min="1" value="2" />
 
         <button type="submit">Get Random Recipe</button>
       </form>
 
-      <div class="recipeContiner">
-        <!-- displayed here -->
-      </div>
+      <div id="recipeContainer"></div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
