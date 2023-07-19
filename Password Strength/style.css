@@ -45,3 +45,15 @@ button {
 button img {
   width: 35px;
 }
+
+#message {
+  position: absolute;
+  bottom: -30px;
+  color: #fff;
+  font-size: 15px;
+  display: none;
+}
+
+::placeholder {
+  font-size: 15px;
+}
