@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.parallax-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 48px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+#section1 {
+  background-color: #00bcd4;
+}
+
+#section2 {
+  background-color: #673ab7;
+}
+
+/* Add styles for other sections as needed */
+
+.parallax-section {
+  /* ... (existing styles) ... */
+  transition: background-color 0.5s, color 0.5s, opacity 0.5s;
+}
+
+/* Add this style to make the content fade in/out as you scroll */
+.parallax-section.fade-in-out {
+  opacity: 0.5;
+}
+
+.parallax-section img {
+  /* ... (existing styles) ... */
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+/* Add this style to create the zoom effect on scroll */
+.parallax-section.zoom-effect img {
+  transform: scale(1.1);
+}
