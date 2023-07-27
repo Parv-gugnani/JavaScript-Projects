@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mindful Breaths</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="breath-animation"></div>
+      <div class="controls">
+        <button id="start-btn">Start</button>
+        <button id="pause-btn">Pause</button>
+        <button id="reset-btn">Reset</button>
+      </div>
+      <div class="customization">
+        <label for="animation-speed">Animation Speed:</label>
+        <input type="range" id="animation-speed" min="1" max="10" value="5" />
+      </div>
+
+      <div class="breath-animation">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
