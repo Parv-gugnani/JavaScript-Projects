@@ -1,10 +1,17 @@
-#This is All the javascript Project
+# JavaScript Html Css - >
+
+You can see here the code of js and html css .
+it is made by me while learning the javascript from Youtube , Chat Gpt , Udemy
+
+# This is All the javascript Project
 
 -AI Image generator
 
 -Age Calculator
 
 -Calculator
+
+-Background remover
 
 -Clock
 
@@ -61,3 +68,5 @@
 -portfollio
 
 -xx-trash
+
+# Feel free to Commit Changes
