@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop-up Notification</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button onclick="showNotification()">Show Notification</button>
+
+    <div id="notification-container" class="notification-container">
+      <div class="notification">
+        <span id="notification-message">This is a notification message.</span>
+        <button id="close-button" onclick="hideNotification()">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
