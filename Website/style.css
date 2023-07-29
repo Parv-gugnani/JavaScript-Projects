@@ -1,0 +1,197 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #e76f51;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #264653;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("hero-background.jpg");
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #2a9d8f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* About Section */
+.about {
+  padding: 50px 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about img {
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+/* Services Section */
+.services {
+  background-color: #f3f3f3;
+  padding: 50px 0;
+}
+
+.services-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 10px 0;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 0;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact button {
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .about img {
+    max-width: 80%;
+  }
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial {
+  max-width: 400px;
+  text-align: center;
+}
+
+.testimonial img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* Team Section */
+.team {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-member {
+  max-width: 200px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #264653;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
