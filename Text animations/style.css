@@ -258,3 +258,59 @@ body {
     width: 0ch;
   }
 }
+
+/*  */
+
+.ripple {
+  display: inline-block;
+  position: relative;
+  animation: rippleAnimation 1.5s linear infinite;
+}
+
+@keyframes rippleAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/*  */
+.flip-text {
+  display: inline-block;
+  perspective: 1000px;
+}
+
+.flip-text span {
+  display: inline-block;
+  transform-style: preserve-3d;
+  animation: flipAnimation 3s linear infinite;
+}
+
+@keyframes flipAnimation {
+  0%,
+  100% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+}
+
+.skewed-text {
+  display: inline-block;
+  animation: skewedAnimation 2s ease infinite;
+}
+
+@keyframes skewedAnimation {
+  0%,
+  100% {
+    transform: skewX(0deg);
+  }
+  50% {
+    transform: skewX(10deg);
+  }
+}
