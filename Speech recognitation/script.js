@@ -1,52 +1,32 @@
-const texts = document.querySelector(".texts");
-window.SpeechRecognition =
-  window.SpeechRecognition || window.webkitSpeechRecognition;
+if ("SpeechRecognition" in window || "webkitSpeechRecognition" in window) {
+  const recognition = new (window.SpeechRecognition ||
+    window.webkitSpeechRecognition)();
 
-const recognition = new SpeechRecognition();
-recognition.interimResults = true;
-let p = document.createElement("p");
+  recognition.continuous = false;
+  recognition.lang = "en-US";
 
-recognition.addEventListener("result", (e) => {
-  texts.appendChild(p);
-  const text = Array.from(e.results)
-    .map((result) => result[0])
-    .map((result) => result.transcript)
-    .join("");
+  const startBtn = document.getElementById("startBtn");
+  const output = document.getElementById("output");
 
-  p.innerText = text;
-  if (e.result[0].isFinal) {
-    if (text.includes("How are You")) {
-      p = document.createElement("p");
-      p.classList.add("replay");
-      p.innerText = "I am fine";
-      texts.appendChild(p);
-    }
+  let spokenText = ""; // Initialize a variable to store the spoken text
 
-    if (
-      text.includes("What's Your name") ||
-      text.includes("What is Your name")
-    ) {
-      p = document.createElement("p");
-      p.classList.add("replay");
-      p.innerText = "My name is Codewith_random";
-      texts.appendChild(p);
-    }
+  startBtn.addEventListener("click", () => {
+    startBtn.disabled = true;
+    recognition.start();
+    output.textContent = "Listening...";
+    spokenText = ""; // Clear spoken text when starting a new recognition
+  });
 
-    if (text.includes("Open Youtube:")) {
-      p = document.createElement("p");
-      p.classList.add("replay");
-      p.innerText = "Opening Youtube..";
-      texts.appendChild(p);
-      console.log("Opening Youtube");
-      window.open("https://www.youtube.com");
-    }
+  recognition.addEventListener("result", (event) => {
+    const transcript = event.results[0][0].transcript;
+    spokenText += transcript;
+    output.textContent = spokenText;
+  });
 
-    p = document.createElement("p");
-  }
-});
-
-recognition.addEventListener("end", () => {
-  recognition.start();
-});
-
-recognition.start();
+  recognition.addEventListener("end", () => {
+    startBtn.disabled = false;
+    output.textContent = "Press Start Listening";
+  });
+} else {
+  console.log("Speech is not supported in this browser");
+}
