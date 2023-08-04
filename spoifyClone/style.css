@@ -33,3 +33,15 @@ audio {
   margin-top: 20px;
   width: 100%;
 }
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.volume-slider {
+  width: 100px;
+  margin: 0 10px;
+}
