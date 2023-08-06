@@ -1,4 +1,3 @@
-// script.js
 const videoFrame = document.getElementById("videoFrame");
 
 function playVideo() {
