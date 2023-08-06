@@ -1,0 +1,13 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.video-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
