@@ -7,12 +7,12 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #a7e1b8;
 }
 
 .header {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #000000;
+  color: #b4dfc1;
   text-align: center;
   padding: 20px 0;
 }
@@ -24,18 +24,22 @@ body {
 }
 
 .question {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #7ee49d;
+  border: 1px solid #0bcd45;
   border-radius: 4px;
   padding: 20px;
   margin-bottom: 20px;
 }
 
 .run-button {
-  background-color: #007bff;
+  background-color: #07b13a;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
+}
+
+h1 {
+  color: #0bcd45;
 }
