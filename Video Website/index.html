@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Video Website</title>
   </head>
   <body>
@@ -12,10 +12,30 @@
     </header>
     <main class="main">
       <section class="video-section">
-        <video controls>
-          <source src="hans.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <h2>Featured Video</h2>
+        <div class="custom-video-player">
+          <video id="videoPlayer" controls>
+            <source src="hans.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-controls">
+            <button id="playPauseBtn">&#9658;</button>
+            <input id="seekSlider" type="range" min="0" step="0.01" />
+            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+          </div>
+        </div>
+      </section>
+      <section class="video-list">
+        <h2>More Videos</h2>
+        <div class="video-item">
+          <img src="hanss.png" alt="Video Thumbnail" />
+          <p>Video Title 1</p>
+        </div>
+        <div class="video-item">
+          <img src="2nd.png" alt="Video Thumbnail" />
+          <p>Video Title 2</p>
+        </div>
+        <!-- Add more video items here -->
       </section>
     </main>
     <footer class="footer">
