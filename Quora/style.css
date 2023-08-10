@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  background-color: #ef1616;
+  background-color: #aa2200;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -40,7 +40,7 @@ body {
 }
 
 .askButton {
-  background-color: #ef1616;
+  background-color: #aa2200;
   color: #fff;
   border: none;
   padding: 8px 20px;
@@ -49,7 +49,7 @@ body {
 }
 
 .askButton:hover {
-  background-color: #ef1616;
+  background-color: #aa2200;
 }
 
 .questions-list ul {
@@ -63,6 +63,90 @@ body {
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 4px;
+}
+
+/*  */
+
+/* ... Rest of your CSS ... */
+
+.question {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.question h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.question-content {
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+}
+
+.action-button {
+  background-color: #aa2200;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.action-button.edit {
+  background-color: #f57c00;
+}
+
+.action-button.delete {
+  background-color: #aa2200;
+}
+
+.answers {
+  margin-top: 10px;
+}
+
+/* Add more styles for responsiveness and additional elements */
+/* ... Rest of your CSS ... */
+
+.answer {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.answer-content {
+  margin-bottom: 5px;
+}
+
+.answer-actions {
+  display: flex;
+}
+
+.answer-actions .action-button {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.answer-actions .action-button.upvote {
+  background-color: #43a047;
+}
+
+.answer-actions .action-button.downvote {
+  background-color: #d32f2f;
 }
 
 /* Add more styles for responsiveness and additional elements */

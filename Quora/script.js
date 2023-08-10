@@ -19,21 +19,20 @@ function addQuestion(questionText) {
   questionsList.appendChild(li);
 }
 
-// ... Rest of your script ...
-
 // Event listener for answering a question
 function addAnswer(answerText, questionIndex) {
   const answer = document.createElement("div");
   answer.className = "answer";
   answer.innerHTML = `
-    <p>${answerText}</p>
-    <div class="vote-buttons">
-      <button class="vote-button upvote">Upvote</button>
-      <button class="vote-button downvote">Downvote</button>
+    <p class="answer-content">${answerText}</p>
+    <div class="answer-actions">
+      <button class="action-button upvote">Upvote</button>
+      <button class="action-button downvote">Downvote</button>
     </div>
   `;
   const question = questionsList.children[questionIndex];
-  question.appendChild(answer);
+  const answersList = question.querySelector(".answers");
+  answersList.appendChild(answer);
 
   const upvoteButton = answer.querySelector(".upvote");
   const downvoteButton = answer.querySelector(".downvote");
@@ -52,9 +51,7 @@ function addAnswer(answerText, questionIndex) {
 
   function updateVoteCount() {
     answer.querySelector(
-      "p"
+      ".answer-content"
     ).textContent = `${answerText} - Upvotes: ${upvotes}, Downvotes: ${downvotes}`;
   }
 }
-
-// ... Rest of your script ...
