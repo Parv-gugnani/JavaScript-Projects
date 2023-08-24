@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #dino {
+        width: 40px;
+        height: 40px;
+        background-color: green;
+        position: absolute;
+        bottom: 0;
+        animation: jump 0.5s ease-in-out infinite;
+      }
+      #obstacle {
+        width: 20px;
+        height: 40px;
+        background-color: red;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      @keyframes jump {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-40px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dino"></div>
+    <div id="obstacle"></div>
+    <script>
+      const dino = document.getElementById("dino");
+      const obstacle = document.getElementById("obstacle");
+      let score = 0;
+      let isJumping = false;
+
+      document.addEventListener("keydown", jump);
+
+      function jump(event) {
+        if (event.keyCode === 32 && !isJumping) {
+          isJumping = true;
+          let jumpUp = 0;
+          let jumpDown = 0;
+          let jumpInterval = setInterval(() => {
+            jumpUp += 20;
+            dino.style.bottom = jumpUp + "px";
+            if (jumpUp >= 200) {
+              clearInterval(jumpInterval);
+              let jumpDownInterval = setInterval(() => {
+                jumpUp -= 20;
+                dino.style.bottom = jumpUp + "px";
+                if (jumpUp === 0) {
+                  clearInterval(jumpDownInterval);
+                  isJumping = false;
+                }
+              }, 30);
+            }
+          }, 30);
+        }
+      }
+
+      function checkCollision() {
+        const dinoPosition = dino.getBoundingClientRect();
+        const obstaclePosition = obstacle.getBoundingClientRect();
+
+        if (
+          dinoPosition.left < obstaclePosition.left + obstaclePosition.width &&
+          dinoPosition.left + dinoPosition.width > obstaclePosition.left &&
+          dinoPosition.top < obstaclePosition.top + obstaclePosition.height &&
+          dinoPosition.top + dinoPosition.height > obstaclePosition.top
+        ) {
+          alert(`Game Over! Your score: ${score}`);
+          location.reload();
+        }
+      }
+
+      function updateScore() {
+        score++;
+        if (score % 10 === 0) {
+          alert(`Congratulations! Your score: ${score}`);
+        }
+      }
+
+      function moveObstacle() {
+        const obstaclePosition = obstacle.getBoundingClientRect();
+        if (obstaclePosition.right <= 0) {
+          obstacle.style.right = "100%";
+          updateScore();
+        } else {
+          obstacle.style.right = `${obstaclePosition.right - 5}px`;
+        }
+        checkCollision();
+      }
+
+      setInterval(moveObstacle, 20);
+    </script>
+  </body>
+</html>
