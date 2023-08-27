@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#chartCanvas {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); /* Simulates a light source */
+}
