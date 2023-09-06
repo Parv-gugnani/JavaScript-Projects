@@ -7,17 +7,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Upload Music</h1>
-    <div id="upload-form">
-      <h2>Upload Your Music</h2>
-      <input type="file" id="music-file" accept=".mp3, .wav" />
-      <input type="text" id="music-name" placeholder="Name" />
-      <textarea id="music-description" placeholder="Description"></textarea>
-      <button id="upload-button">Upload</button>
-    </div>
-    <div id="music-list">
-      <h2>Your Uploaded Music</h2>
-      <ul id="music-items"></ul>
+    <div class="container">
+      <h1>Upload and Play Music</h1>
+      <div id="upload-form" class="form-container">
+        <h2>Upload Your Music</h2>
+        <input type="file" id="music-file" accept=".mp3, .wav" />
+        <input type="text" id="music-name" placeholder="Name" />
+        <textarea id="music-description" placeholder="Description"></textarea>
+        <label for="music-upload-button" class="custom-file-upload">
+          <span class="button-label"
+            ><i class="fa fa-plus"></i> Upload Music</span
+          >
+        </label>
+        <input type="file" id="music-upload-button" class="hidden" />
+      </div>
+      <div id="music-list" class="music-container">
+        <h2>Your Uploaded Music</h2>
+        <ul id="music-items"></ul>
+      </div>
+      <audio id="audio-player" controls></audio>
     </div>
     <script src="script.js"></script>
   </body>

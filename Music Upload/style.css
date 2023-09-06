@@ -1,42 +1,99 @@
+/* Add these styles to style.css */
 body {
   font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f0f0f0;
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.form-container,
+.music-container {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
 }
 
 #upload-form {
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#music-list {
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: #fff;
-  border: 1px solid #ddd;
+h2 {
+  font-size: 18px;
+  color: #007bff;
+}
+
+input[type="file"],
+input[type="text"],
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #444;
+  color: #fff;
   border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label.custom-file-upload {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+span.button-label {
+  margin-right: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.music-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .music-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin: 10px 0;
+  background-color: #444;
+  border: 1px solid #666;
   border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
-#music-items li {
-  list-style: none;
+audio {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #444;
+  border-radius: 5px;
 }
