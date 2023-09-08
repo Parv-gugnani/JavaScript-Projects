@@ -14,7 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #5E63BA;
+  background: #023047;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
   width: 850px;
   gap: 70px;
   padding: 60px 40px;
-  background: #fff;
+  background: #8ecae6;
   border-radius: 10px;
   align-items: flex-end;
   justify-content: space-between;
@@ -57,7 +57,7 @@ body {
   font-weight: 600;
   margin-bottom: 40px;
   text-transform: uppercase;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #fb8500;
 }
 
 .word-display .letter.guessed {
@@ -97,7 +97,7 @@ body {
   font-weight: 600;
   border-radius: 4px;
   text-transform: uppercase;
-  background: #5E63BA;
+  background: #219ebc;
 }
 
 .keyboard button {
@@ -111,7 +111,7 @@ body {
 }
 
 :where(.game-modal, .keyboard) button:hover {
-  background: #8286c9;
+  background: #3eb7d5;
 }
 
 .game-modal {
@@ -142,7 +142,7 @@ body {
   max-width: 420px;
   width: 100%;
   border-radius: 10px;
-  background: #fff;
+  background: #8ecae6;
   text-align: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -167,7 +167,7 @@ body {
 }
 
 .game-modal p b {
-  color: #5E63BA;
+  color: #fb8500;
   font-weight: 600;
 }
 
