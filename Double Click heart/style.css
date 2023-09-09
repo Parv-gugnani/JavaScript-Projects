@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    height: 420px;
+    width: 320px;
+    background-image: url("click.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.container .heart {
+    position: absolute;
+    font-size: 40px;
+    color: red;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+
+.heart.active {
+    animation: clicking 0.8s linear infinite;
+}
+
+@keyframes clicking {
+    30% {
+        opacity: 1;
+        font-size: 80px;
+    }
+
+    50% {
+        opacity: 1;
+        font-size: 60px;
+    }
+
+    70% {
+        opacity: 1;
+        font-size: 70px;
+    }
+}
