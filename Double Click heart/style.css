@@ -31,8 +31,6 @@ body {
     position: absolute;
     font-size: 40px;
     color: red;
-    left: 50%;
-    top: 50%;
     opacity: 0;
     transform: translate(-50%, -50%);
 }
