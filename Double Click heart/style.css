@@ -39,7 +39,7 @@ body {
 
 
 .heart.active {
-    animation: clicking 0.8s linear infinite;
+    animation: clicking 0.8s linear forwards;
 }
 
 @keyframes clicking {
@@ -56,5 +56,15 @@ body {
     70% {
         opacity: 1;
         font-size: 70px;
+    }
+
+    80% {
+        opacity: 1;
+        font-size: 60px;
+    }
+
+    90% {
+        opacity: 1;
+        font-size: 60px;
     }
 }
