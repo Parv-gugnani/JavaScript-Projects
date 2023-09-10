@@ -14,9 +14,44 @@
    118ab2
    073b4c
 */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fcc646;
+}
 
 .wrapper {
     width: 65vmin;
     height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #118ab2;
+}
+
+
+.game-details {
+    color: #ffd166;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
     background: #073b4c;
+}
+
+
+.play-board .food {
+    background: #d62828;
+    /* ef476f */
 }
