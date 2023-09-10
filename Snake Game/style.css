@@ -52,6 +52,9 @@ body {
 
 
 .play-board .food {
-    background: #d62828;
-    /* ef476f */
+    background: #ef476f;
+}
+
+.play-board .head {
+    background: #06d6a0;
 }
