@@ -58,3 +58,44 @@ body {
 .play-board .head {
     background: #06d6a0;
 }
+
+.controls {
+    display: none;
+    justify-content: space-around;
+}
+
+
+.controls i {
+    padding: 25px 0;
+    color: #ffd166;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    border-right: 1px solid #073b4c;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90vmin;
+        height: 115vmin;
+    }
+
+    .game-details {
+        font-size: 1rem;
+        padding: 15px 57px;
+    }
+
+    .controls {
+        display: flex;
+    }
+
+    .controls i {
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
