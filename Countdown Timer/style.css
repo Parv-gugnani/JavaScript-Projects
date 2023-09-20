@@ -84,6 +84,8 @@ h2 {
   margin-bottom: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: aqua;
+
 }
 
 #timer {
@@ -95,19 +97,19 @@ h2 {
   padding: 30px;
 }
 
-#timer > div {
+#timer>div {
   text-align: center;
   margin: 0 20px;
 }
 
-#timer > div > span {
+#timer>div>span {
   display: block;
   font-size: 60px;
   font-weight: bold;
   color: #fff;
 }
 
-#timer > div > span:last-child {
+#timer>div>span:last-child {
   font-size: 20px;
   margin-top: -10px;
   color: #000;

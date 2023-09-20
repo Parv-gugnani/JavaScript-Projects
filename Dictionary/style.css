@@ -6,6 +6,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: #007bff;
 }
 
 .container {
@@ -20,7 +21,7 @@ input {
 button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff;
+  background-color: #04ae64;
   color: #fff;
   border: none;
   cursor: pointer;
