@@ -1,0 +1,34 @@
+/* Reset default margin and padding for HTML and body */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    background-color: black;
+    /* Set the background color for the entire page */
+}
+
+/* Style for the particle container */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    /* Set the particle container background to transparent */
+}
+
+/* Add any additional styles for your webpage here */
+
+/* Example styles for headers and text */
+h1 {
+    color: white;
+    /* Set the text color for headers */
+    font-size: 36px;
+}
+
+p {
+    color: white;
+    /* Set the text color for paragraphs */
+    font-size: 18px;
+}
