@@ -3,108 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Types of Buttons</title>
-    <style>
-      /* Basic Button */
-      .basic-button {
-        padding: 10px 20px;
-        background-color: #3498db;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Codepen Btn Animation</title>
 
-      /* Gradient Button */
-      .gradient-button {
-        padding: 15px 30px;
-        background-image: linear-gradient(45deg, #ff3366, #00ccff);
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-      /* Outline Button */
-      .outline-button {
-        padding: 10px 20px;
-        background-color: transparent;
-        color: #3498db;
-        border: 2px solid #3498db;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      /* Rounded Button */
-      .rounded-button {
-        padding: 10px 20px;
-        background-color: #3498db;
-        color: #fff;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-      }
-
-      /* Icon Button */
-      .icon-button {
-        padding: 10px 20px;
-        background-color: #3498db;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      .icon-button i {
-        margin-right: 5px;
-      }
-   /* Transparent Button */
-   .transparent-button {
-            padding: 10px 20px;
-            background-color: transparent;
-            color: #333;
-            border: 2px solid #333;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Animated Border Button */
-        .animated-border-button {
-            padding: 10px 20px;
-            background-color: transparent;
-            color: #3498db;
-            border: 2px solid transparent;
-            border-radius: 5px;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-        .animated-border-button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background: linear-gradient(to right, #FF3366, #00CCFF);
-            transition: width 0.3s ease;
-            z-index: -1;
-        }
-
-        .animated-border-button:hover::before {
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <button class="basic-button">Basic Button</button>
-    <button class="gradient-button">Gradient Button</button>
-    <button class="outline-button">Outline Button</button>
-    <button class="rounded-button">Rounded Button</button>
-    <button class="icon-button"><i class="fa fa-search"></i> Icon Button</button>
-    <button class="transparent-button">Transparent Button</button>
-    <button class="animated-border-button">Animated Border Button</button>
-</body>
-</html>
+  <body>
+    <a href="#" class="button-anon-pen"
+      >g
+      <span>Start Coding</span>
+    </a>
+  </body>
 </html>
