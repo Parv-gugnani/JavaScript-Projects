@@ -22,6 +22,7 @@ body {
     border-radius: 14px;
     background: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background: var(--primary-color);
 }
 
 :root {
@@ -41,19 +42,12 @@ body {
     column-gap: 7rem;
 }
 
-.container {
-    background: var(--primary-color);
-}
-
-
 .user_result img {
     transform: rotate(90deg);
 }
 
-
 .bot_result img {
     transform: rotate(-90deg) rotateY(180deg);
-
 }
 
 .result {
@@ -62,11 +56,10 @@ body {
     color: #023047;
 }
 
-
 .option_image img {
+
     width: 50px;
 }
-
 
 .option_images {
     display: flex;
@@ -84,11 +77,11 @@ body {
     flex-direction: column;
     align-items: center;
     opacity: 0.5;
-    transition: opacity 0.3 ease;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
 
 .option_image img {
-
     pointer-events: none;
 }
 
