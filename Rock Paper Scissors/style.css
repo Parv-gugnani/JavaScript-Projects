@@ -75,10 +75,21 @@ body {
     justify-content: space-between;
 }
 
+.option_image:hover {
+    opacity: 1;
+}
+
 .option_image {
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0.5;
+    transition: opacity 0.3 ease;
+}
+
+.option_image img {
+
+    pointer-events: none;
 }
 
 .option_image p {
