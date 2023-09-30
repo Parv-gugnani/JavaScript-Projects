@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Div Button</title>
+  </head>
+  <body>
+    <button id="createDivButton"><span>+</span> New chat</button>
+    <div id="container"></div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const createDivButton = document.getElementById("createDivButton");
+        const container = document.getElementById("container");
+
+        createDivButton.addEventListener("click", function () {
+          const newDiv = document.createElement("div");
+          newDiv.textContent = "This is new chat";
+          container.appendChild(newDiv);
+        });
+      });
+    </script>
+  </body>
+</html>
