@@ -7,6 +7,6 @@ it is made by me while learning the javascript from Youtube , Chat Gpt , Udemy
 
 # Examples
 
-!(</Imgmd/1%20(1).png>)
+![My Image](<./Imgmd/1%20(1).png>)
 
 # Feel free to Commit Changes
