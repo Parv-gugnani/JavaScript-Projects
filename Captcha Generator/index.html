@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Captcha Generator</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>Captcha Generator</header>
+      <div class="input_field captch_box">
+        <button class="refresh_button">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+      </div>
+      <div class="input_field captch_input">
+        <input type="text" placeholder="Enter captcha..." />
+      </div>
+      <div class="message">Entered captcha is correct</div>
+      <div class="input_field button disabled">
+        <button>Submit Captcha</button>
+      </div>
+    </div>
+
+    <script src="scr"></script>
+  </body>
 </html>
