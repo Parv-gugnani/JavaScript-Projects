@@ -10,6 +10,9 @@
     <div class="toggle"></div>
     <script>
       const toggleBtn = document.querySelector(".toggle");
+      toggleBtn.addEventListener("click", () =>
+        toggleBtn.classList.toggle("active")
+      );
     </script>
   </body>
 </html>
