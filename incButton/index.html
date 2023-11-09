@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inc and Dec button</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -11,6 +12,8 @@
       <span class="num">01</span>
       <span class="plus">+</span>
     </div>
+    <!-- notifaiciton -->
+
     <script>
       const plus = document.querySelector(".plus");
       const minus = document.querySelector(".minus");
@@ -22,7 +25,7 @@
         num.innerText = a;
       });
 
-      minus.ddEventListener("click", () => {
+      minus.addEventListener("click", () => {
         if (a > 1) {
           a--;
           a = a < 10 ? "0" + a : a;
