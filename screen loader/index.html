@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Screen Loader</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <h1>this is how it loads</h1>
+    </div>
+    <script>
+      const loader = document.querySelector(".loader");
+      window.onload = function () {
+        setTimeout(function () {
+          loader.style.opacity = "0";
+          setTimeout(function () {
+            loader.style.display = "none";
+          }, 500);
+        }, 1500);
+      };
+    </script>
+  </body>
+</html>
