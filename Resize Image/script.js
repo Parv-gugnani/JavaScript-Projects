@@ -16,11 +16,12 @@ const loadFile = (e) => {
   previewImg.addEventListener("load", () => {
     widthInput.value = previewImg.naturalWidth;
     heightInput.value = previewImg.naturalHeight;
-    ogImageRatio.value = previewImg.naturalWidth / previewImg.naturalHeight;
+    ogImageRatio = previewImg.naturalWidth / previewImg.naturalHeight; // Corrected assignment
   });
 };
 
-widthInput.addEventListener("keyup", () => {
+widthInput.addEventListener("input", () => {
+  // Changed from 'keyup' to 'input' for real-time updating
   const height = ratioInput.checked
     ? widthInput.value / ogImageRatio
     : heightInput.value;
@@ -28,7 +29,8 @@ widthInput.addEventListener("keyup", () => {
   heightInput.value = Math.floor(height);
 });
 
-heightInput.addEventListener("keyup", () => {
+heightInput.addEventListener("input", () => {
+  // Changed from 'keyup' to 'input' for real-time updating
   const width = ratioInput.checked
     ? heightInput.value * ogImageRatio
     : widthInput.value;
@@ -48,7 +50,7 @@ const resizeAndDownload = () => {
   ctx.drawImage(previewImg, 0, 0, canvas.width, canvas.height);
 
   a.href = canvas.toDataURL("image/jpeg", imgQuality);
-  a.downloadURL = new Date().getTime();
+  a.download = new Date().getTime(); // Corrected 'downloadURL' to 'download'
   a.click();
 };
 
