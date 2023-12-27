@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <title>Drawing App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,7 +16,6 @@
               <img src="icons/rectangle.svg" alt="" />
               <span>Rectangle</span>
             </li>
-
             <li class="option tool" id="circle">
               <img src="icons/circle.svg" alt="" />
               <span>Circle</span>
@@ -27,7 +26,7 @@
             </li>
             <li class="option">
               <input type="checkbox" id="fill-color" />
-              <label for="fill-color">Fill Color</label>
+              <label for="fill-color">Fill color</label>
             </li>
           </ul>
         </div>
@@ -36,7 +35,7 @@
           <ul class="options">
             <li class="option active tool" id="brush">
               <img src="icons/brush.svg" alt="" />
-              <span>brush</span>
+              <span>Brush</span>
             </li>
             <li class="option tool" id="eraser">
               <img src="icons/eraser.svg" alt="" />
@@ -49,7 +48,7 @@
         </div>
         <div class="row colors">
           <label class="title">Colors</label>
-          <ul class="option">
+          <ul class="options">
             <li class="option"></li>
             <li class="option selected"></li>
             <li class="option"></li>
@@ -61,7 +60,7 @@
         </div>
         <div class="row buttons">
           <button class="clear-canvas">Clear Canvas</button>
-          <button class="save-img">Save as Image</button>
+          <button class="save-img">Save Image</button>
         </div>
       </section>
       <section class="drawing-board">
