@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="tools-board">
+      <section class="tools-board">
         <div class="row">
           <label class="title">Shapes</label>
           <ul class="options">
@@ -59,7 +59,14 @@
             </li>
           </ul>
         </div>
-      </div>
+        <div class="row buttons">
+          <button class="clear-canvas">Clear Canvas</button>
+          <button class="save-img">Save as Image</button>
+        </div>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
     </div>
     <script src="script.js" defer></script>
   </body>
