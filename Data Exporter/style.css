@@ -3,4 +3,38 @@
     padding: 0;
 }
 
-.main
+.main {
+    width: max-content;
+    margin: auto;
+}
+
+.main h1 {
+    color: green;
+    text-align: center;
+}
+
+.main input {
+    margin-top: 40px;
+}
+
+.main button {
+    width: max-content;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: green;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+.main button:hover {
+    background-color: rgb(2, 105, 2);
+    cursor: pointer;
+}
+
+.main button:active {
+    transform: translate(0, 2px);
+}
