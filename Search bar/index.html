@@ -3,23 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Bar</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Search Bar Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
     <div class="container">
       <input
-        class="searchbar"
+        id="searchbar"
         onkeyup="search_animal()"
         type="text"
         name="search"
-        placeholder="search..."
-      >
-    <ul id="list">
-        <li class="option">Girl</li>
-        <li class="option">cat</li>
-        <li class="option">Dog</li>
-        <li class="option">Mouse</li>
+        placeholder="Search animals.."
+      />
+
+      <ul id="list">
         <li class="option">Apple</li>
         <li class="option">Banana</li>
         <li class="option">Elephant</li>
@@ -119,9 +117,9 @@
         <li class="option">Infusion</li>
         <li class="option">Cascade</li>
         <li class="option">Symphony</li>
-    </ul>
-</input>
+      </ul>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
