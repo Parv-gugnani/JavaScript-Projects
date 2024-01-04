@@ -4,6 +4,8 @@ You can see here the code of JavaScript, HTML, and CSS for my project. This proj
 
 ## This is All the JavaScript Project
 
+# These are almost 93 projects
+
 ### Examples
 ![Image 1](https://i.ibb.co/5sfryND/1.png)
 ![Image 2](https://i.ibb.co/pPjP54B/2.png)
