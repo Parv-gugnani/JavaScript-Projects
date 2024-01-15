@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   toggleButton.addEventListener("click", function () {
     linksContainer.style.maxHeight =
-      linksContainer.style.maxHeight === "0px" ? "200px" : "0px";
+      linksContainer.style.maxHeight === "px" ? "200px" : "0px";
   });
 });
