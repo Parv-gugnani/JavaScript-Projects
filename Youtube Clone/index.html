@@ -11,11 +11,13 @@
     <title>Youtube</title>
   </head>
   <body>
+    <div class="bg-zinc-950 dark:bg-white"></div>
     <div class="main">
       <h1>Youtube</h1>
     </div>
 
-    <div class="navbar">
+    <!-- top head -->
+    <nav class="navbar">
       <div class="logo">Youtube</div>
       <div class="search-bar">
         <input type="text" placeholder="Search" />
@@ -23,14 +25,24 @@
           <i id="icon" class="bi bi-search"></i>
         </button>
       </div>
-      <div class="sidebar">
-        <button id="toggleButton">&#9776;</button>
-        <div class="links">
-          <h2>Home</h2>
-          <h2>Trending</h2>
-          <h2>Subscriptions</h2>
-        </div>
+
+      <!-- right acccount at header -->
+      <div class="account">
+        <img src="img.jpg" alt="" />
       </div>
+    </nav>
+    <!-- end header -->
+
+    <!-- side -->
+    <div class="sidebar">
+      <a href="#">Home</a>
+      <a href="#">Trending</a>
+      <a href="#">Subscriptions</a>
+    </div>
+    <div class="content">
+      <!-- Your main content goes here -->
+      <h1>Main Content</h1>
+      <p>This is the main content of the page.</p>
     </div>
 
     <script src="script.js"></script>
